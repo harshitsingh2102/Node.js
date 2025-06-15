@@ -53,3 +53,9 @@ const server = http.createServer((req, res) => {
 server.listen(3000, () => {
   console.log('Server running at http://localhost:3000');
 });
+ 1. Create a file
+http://localhost:3000/create?name=sample.txt&content=This%20is%20a%20test
+2. Read the file
+http://localhost:3000/read?name=sample.txt
+3. Delete the file
+http://localhost:3000/delete?name=sample.txt
